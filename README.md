@@ -9,7 +9,7 @@
 
 ## 📸 System Preview
 
-![Kitchen Operations Dashboard](kitchen-ai-frontend/KitchenOperations.png)
+![Kitchen Operations Dashboard](kitchen-ai-frontend/screenshots/KitchenOperations.png)
 *Real-time Kitchen Operations Dashboard with AI monitoring and analytics*
 
 ## 🚀 Overview
