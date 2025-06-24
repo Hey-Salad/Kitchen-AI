@@ -7,6 +7,11 @@
 [![🇬🇧 UK](https://img.shields.io/badge/🇬🇧-United%20Kingdom-blue.svg)](https://github.com/Hey-Salad/Kitchen-AI)
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support%20HeySalad-orange.svg?style=for-the-badge&logo=buy-me-a-coffee)](https://buymeacoffee.com/heysalad)
 
+## 📸 System Preview
+
+![Kitchen Operations Dashboard](kitchen-ai-frontend/KitchenOperations.png)
+*Real-time Kitchen Operations Dashboard with AI monitoring and analytics*
+
 ## 🚀 Overview
 
 HeySalad Kitchen AI is a comprehensive multi-agent kitchen management system that leverages artificial intelligence to optimize operations, ensure quality control, and enhance customer satisfaction in B2B kitchen environments. Built with modern web technologies and AI-powered agents for intelligent kitchen automation.
@@ -130,6 +135,9 @@ npm run dev
 
 Frontend will be available at: **http://localhost:5173**
 
+![Kitchen Dashboard Live View](kitchen-ai-frontend/KitchenOperations.png)
+*Your Kitchen AI dashboard will look like this - real-time monitoring with professional HeySalad branding*
+
 ### 4. Test the System
 - **Voice Commands**: Use the Voice button in the header
 - **Camera Analysis**: Use the Camera button for quality assessment
@@ -181,6 +189,9 @@ Our consistent brand palette used throughout the application:
 ## 📊 Dashboard Features
 
 ### Kitchen Operations
+![Kitchen Operations](kitchen-ai-frontend/KitchenOperations.png)
+
+The main Kitchen Operations dashboard provides:
 - Real-time environmental monitoring (temperature, humidity)
 - Agent performance tracking with efficiency metrics
 - Order flow visualization and management
@@ -300,8 +311,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Made with ❤️ in London
 
 ### Contact Information
-- 📧 Email: admin@heysalad.com
-- 🌐 Website: [HeySalad.app](https://heysalad.app)
+- 📧 Email: investors@heysalad.app
+- 🌐 Website: [kitchen.heysalad.app](https://kitchen.heysalad.app)
 - 🔗 Repository: [GitHub](https://github.com/Hey-Salad/Kitchen-AI)
 - ☕ Support: [Buy Me A Coffee](https://buymeacoffee.com/heysalad)
 
