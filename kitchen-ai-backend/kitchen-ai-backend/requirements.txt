@@ -1,0 +1,19 @@
+# Agent Development Kit - Core requirement for hackathon
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+websockets>=11.0.0
+pydantic>=2.4.0
+
+# For ADK simulation (will install actual ADK in production)
+python-dotenv>=1.0.0
+structlog>=23.1.0
+
+# Audio/Image processing simulation
+Pillow>=10.0.0
+python-multipart>=0.0.6
+
+# Optional: Twilio for notifications
+twilio>=8.8.0
+
+# Development
+pytest>=7.4.0

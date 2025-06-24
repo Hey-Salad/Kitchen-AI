@@ -1,0 +1,172 @@
+/* Bulma CSS from CDN - No PostCSS needed */
+@import url('https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css');
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@400;500;600;700;800&family=Figtree:wght@300;400;500;600;700&display=swap');
+
+/* HeySalad Custom Variables */
+:root {
+  --heysalad-primary: #ed4c4c;
+  --heysalad-secondary: #ff8c42;
+  --heysalad-accent: #ffd0cd;
+}
+
+/* Custom HeySalad Bulma Classes */
+.button.is-heysalad-primary {
+  background-color: var(--heysalad-primary) !important;
+  border-color: var(--heysalad-primary) !important;
+  color: white !important;
+}
+
+.button.is-heysalad-primary:hover {
+  background-color: #d43d3d !important;
+  border-color: #d43d3d !important;
+}
+
+.button.is-heysalad-secondary {
+  background-color: var(--heysalad-secondary) !important;
+  border-color: var(--heysalad-secondary) !important;
+  color: white !important;
+}
+
+.has-text-heysalad-primary {
+  color: var(--heysalad-primary) !important;
+}
+
+/* Modern Sidebar */
+.modern-sidebar {
+  background: white;
+  border-right: 1px solid #e8e8e8;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: fixed;
+  top: 120px; /* Back to original */
+  left: 0;
+  height: calc(100vh - 120px); /* Back to original */
+  width: 280px;
+  z-index: 30;
+  overflow-y: auto;
+}
+
+.sidebar-collapsed {
+  transform: translateX(-100%);
+}
+
+.sidebar-toggle {
+  position: absolute;
+  right: -15px;
+  top: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.sidebar-item.is-active {
+  background: var(--heysalad-primary) !important;
+  color: white !important;
+}
+
+/* Original Header Size */
+.modern-header {
+  background: white;
+  border-bottom: 1px solid #e8e8e8;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  height: 120px; /* Back to original size */
+  display: flex;
+  align-items: center;
+}
+
+/* Content back to original */
+.main-content {
+  margin-top: 120px; /* Back to original */
+  margin-left: 0;
+  transition: margin-left 0.3s ease;
+  min-height: calc(100vh - 120px); /* Back to original */
+  padding: 2rem;
+}
+
+.main-content.sidebar-open {
+  margin-left: 280px;
+}
+
+/* Cards */
+.modern-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f0f0f0;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.modern-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .modern-sidebar {
+    top: 0;
+    height: 100vh;
+  }
+  
+  .sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 25;
+  }
+  
+  .main-content {
+    margin-left: 0 !important;
+    margin-top: 140px; /* Slightly smaller on mobile */
+  }
+  
+  .modern-header {
+    height: 140px; /* Slightly smaller on mobile */
+  }
+}
+
+/* Fonts */
+body {
+  font-family: 'Figtree', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .title, .subtitle {
+  font-family: 'Grandstander', cursive;
+}
+
+/* Status indicators */
+.status-online {
+  background: #48c774;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(72, 199, 116, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(72, 199, 116, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(72, 199, 116, 0);
+  }
+}
